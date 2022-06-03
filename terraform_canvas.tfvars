@@ -5,9 +5,9 @@ client_secret = ""
 tenant_id = ""
 
 # Resource Group/Location
-location = "East US 2"
-resource_group = "Lesson1"
-application_type = "myApplication3"
+location = ""
+resource_group = ""
+application_type = ""
 
 # Tags
 tier = "Test"

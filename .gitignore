@@ -1,0 +1,4 @@
+/terraform/environments/test/terraform.tfvars
+.terraform
+/terraform/environments/test/.terraform.lock.hcl
+/terraform/environments/test/main.tf

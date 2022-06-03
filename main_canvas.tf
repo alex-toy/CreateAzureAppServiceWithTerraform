@@ -5,6 +5,7 @@ provider "azurerm" {
   client_secret   = "${var.client_secret}"
   features {}
 }
+
 terraform {
   backend "azurerm" {
     storage_account_name = ""
@@ -13,17 +14,20 @@ terraform {
     access_key           = ""
   }
 }
+
 locals {
   tags = {
     tier        = "${var.tier}"
     deployment  = "${var.deployment}"
   }
 }
+
 module "resource_group" {
   source               = "../../modules/resource_group"
   resource_group       = "${var.resource_group}"
   location             = "${var.location}"
 }
+
 module "appservice" {
   source           = "../../modules/appservice"
   location         = "${var.location}"
