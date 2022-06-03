@@ -1,1 +1,1 @@
-# CreateAzureAppServiceWithTerraform
+# Create an Azure AppService applying IaC concepts using Terraform
